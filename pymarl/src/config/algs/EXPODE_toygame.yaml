@@ -1,0 +1,54 @@
+
+
+# use epsilon greedy action selector
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 50000
+
+runner: "episode"
+
+buffer_size: 5000
+
+# update the target network every {} episodes
+target_update_interval: 200
+
+# use the Q_Learner to train
+agent_output_type: "q"
+learner: "EXPODE_curiosity_learner"
+double_q: True
+mixer: "vdn"
+mixing_embed_dim: 32
+n_head: 4
+atten_loss_scale: 0.05
+atten_embed_dim: 64
+gamma: 0.99
+
+is_intrinsic: True
+curiosity_scale: 0.01
+curiosity_decay: True
+curiosity_decay_rate: 0.9
+curiosity_decay_cycle: 5000
+curiosity_decay_stop: 0.005
+
+save_buffer: False
+save_buffer_cycle: 500
+save_buffer_path: "./results/heatmap/heatmap_buffer_0816/"
+
+mac: "EXPODE_mac"
+agent: "rnn_fast"
+is_prioritized_buffer: True
+
+use_emdqn: False
+emdqn_loss_weight: 0.001
+
+emdqn_buffer_size: 1000000
+emdqn_latent_dim: 4
+q_loss_weight: 1
+
+soft_update_tau: 0.005
+vdn_soft_update: True
+predict_vdn_target: True
+use_qtotal_td: False
+
+name: "EXPODE_toygame"
