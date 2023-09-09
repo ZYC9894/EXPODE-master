@@ -50,7 +50,7 @@ They are all located in `src/config`.
 
 
 
-Our experimental results are saved in `EXPODE_experimental_data` , and can be found by the following command:
+Our experimental results are saved in the `EXPODE_experimental_data` folder, and can be found by the following command:
 
 ```SHE
 cd EXPODE-master/pymarl/src/EXPODE_experimental_data
