@@ -21,12 +21,7 @@ The `requirements.txt` file can be used to install the necessary packages into a
 ## Run an experiment 
 In this code, We evaluate our method on two environments: Predator and Prey("pred_prey_punish"), SMAC("sc2"). We use the default settings in SMAC, and the results in our paper use Version SC2.4.6.2.69232.
 
-| Task config  | Algorithm config|
-| pred_prey_punish  | EXPODE_toygame |
-| sc2 | EXPODE_sc2|
 
-Map names for SMAC:
-{2s3z,3s5z,5m_vs_6m,3s5z_vs_3s6z,MMM2,3s_vs_5z,6h_vs_8z,corridor.}
 
 
 To train EXPODE on Predator and Prey, run the following command:
@@ -40,6 +35,8 @@ To train EXPODE on SC2 setting tasks, run the following command:
 ```shell
 python3 src/main.py --config=EXPODE_sc2 --env-config=sc2 with env_args.map_name=MMM2 
 ```
+
+Map names for SMAC include 2s3z, 3s5z, 5m_vs_6m, 3s5z_vs_3s6z, MMM2, 3s_vs_5z, 6h_vs_8z, corridor.
 
 
 
