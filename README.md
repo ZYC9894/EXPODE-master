@@ -19,7 +19,8 @@ pip install -e .
 The `requirements.txt` file can be used to install the necessary packages into a virtual python environment.
 
 ## Run an experiment 
-In this code, We evaluate our method on two environments: Predator and Prey("pred_prey_punish"), SMAC("sc2"). We use the default settings in SMAC, and the **results in our paper use Version SC2.4.6.2.69232**.
+In this code, We evaluate our method on two environments: Predator and Prey("pred_prey_punish"), SMAC("sc2"). We use the default settings in SMAC, and the results in our paper use Version SC2.4.6.2.69232.
+
 | Task config  | Algorithm config|
 | pred_prey_punish  | EXPODE_toygame |
 | sc2 | EXPODE_sc2|
