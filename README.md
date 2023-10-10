@@ -1,4 +1,6 @@
-# EXPODE: EXploiting POlicy Discrepancy for Efficient Exploration in Multi-agent Reinforcement Learning
+# EXPODE
+
+This repository implements EXPODE used in the paper "EXPODE: EXploiting POlicy Discrepancy for Efficient Exploration in Multi-agent Reinforcement Learning" (https://dl.acm.org/doi/10.5555/3545946.3598619). 
 
 ## Install experimental platform
 
